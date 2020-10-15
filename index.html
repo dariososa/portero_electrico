@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portero Eléctrico</title>
+
+    <!-- CSS only -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/portero.js"></script>
+</head>
+
+<body>
+
+    <div class="container-fluid ">
+        <section class="row">
+            <div class="col-12 col-md-12 principal">
+                
+             
+
+
+                <div class="all">
+                   
+                    <div class="boxMaster">
+
+                        <div class="pisodpto">
+
+                            <input  id ="piso" class="piso text-center " placeholder="PISO"  readonly>
+                            <input  id ="dpto" class="piso text-center " placeholder="DPTO" readonly>
+
+
+                        </div>
+                        <span  id ="mensaje1"> </span>
+                        <span  id ="mensaje2"> </span>
+
+                        <div class="numbers1">
+                            <div class="numbers">
+                                <div class="asd">
+                                    <button type="button" id="btn1" class="bttn " onclick="presionar(1);">1</button>
+                                </div>
+                                <div class="asd"><button type="button" class="bttn" id="btn4" onclick="presionar(4);">4</button></div>
+                                <div class="asd"><button type="button" id="btn7" class="bttn"  onclick="presionar(7);">7</button></div>
+                                <div class="asd"><button type="button" id="llamar" class="bttn"  onclick="botonllamar();"><img class="imgg" src="./img/call.svg" alt=""></button></div>
+                            </div>
+                            <div class="numbers">
+                                <div class="asd"><button type="button" id="btn2" class="bttn"  onclick="presionar(2)">2</button></div>
+                                <div class="asd"><button type="button" id="btn5"  class="bttn" onclick="presionar(5)">5</button></div>
+                                <div class="asd"><button type="button" id="btn8" class="bttn"  onclick="presionar(8)">8</button></div>
+                                <div class="asd"><button type="button" id="btn0" class="bttn"  onclick="presionar(0)">0</button></div>
+                            </div>
+                            <div class="numbers">
+                                <div class="asd"><button type="button" id="tres"  class="bttn" onclick="presionar(3)">3</button></div>
+                                <div class="asd"><button type="button" id="seis" class="bttn"  onclick="presionar(6)">6</button></div>
+                                <div class="asd"><button type="button" id="nueve" class="bttn" onclick="presionar(9)">9</button></div>
+                                <div class="asd"><button type="button" id="borrar"  class="bttn" onclick="botonborrar();"><img class="imgg" src="./img/trash.svg" alt=""></button></div>
+                            </div>
+
+
+                        </div>
+                        <div class="visor">
+                            <input class="visor1" id="mensaje" placeholder="Por favor, indique piso y departamento" readonly>
+                            
+                        </div>
+                        <!-- <button onclick="mensaje1();">DEMO</button> -->
+                        <div class="text-center instrucciones">Instrucciones en Español / English Instructions </div>
+                        <audio src="./instrucciones/spanish.mp3" controls></audio>
+                        
+                        <audio src="./instrucciones/english.mp3" controls></audio>
+                    </div>
+
+                </div>
+
+            </div>
+            
+        </section>
+
+
+    </div>
+
+    <!-- JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
